@@ -1,0 +1,98 @@
+
+/* heading part */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bird-logo {
+    width: 150px;
+}
+
+
+.nav-bar {
+    width: 500px;
+    margin-top: 37px;
+}
+
+
+.nav-menu {
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.nav-button {
+    all: unset;
+    cursor:pointer;
+}
+
+.category{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-bottom: 2%;
+}
+.category button{
+    border:none;
+    font-weight: bold;
+    padding:1%;
+    cursor:pointer;
+}
+.category button:hover{
+ background:salmon;   
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+li {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+
+/* body part */
+
+
+
+.box {
+
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    color: #334834;
+    font-weight: bolder;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+
+h1 {
+    border-bottom: 1px solid #334834;
+    padding: 10px;
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #334834;
+    box-shadow: 10px 5px 5px #000;
+    height: 200px;
+    width: 600px;
+}
+
+
+/*  footer part */
+
