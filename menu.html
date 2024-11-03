@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>menu-SG</title>
+</head>
+<body>
+    <header>
+        <img class="bird-logo" src="img.png" alt="Logo">
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="catering.html">CATERING</a></li>
+                <li><a href="deals.html">DEALS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about-1">
+        <h2>MENU</h2>
+    </section>
+    <div class="category">
+        
+        <button class="category-button" onclick="displayCategory()">All</button>
+        <button class="category-button" onclick="displayCategory('starters')">Starters</button>
+        <button class="category-button" onclick="displayCategory('main_course')">Main Course</button>
+        <button class="category-button" onclick="displayCategory('drinks')">Cocktails</button>
+        <button class="category-button" onclick="displayCategory('mocktails')">Mocktails</button>
+        <button class="category-button" onclick="displayCategory('desserts')">Desserts</button>
+    </div>
+    <div id="menu-container" class="box"></div>
+    <footer>
+        <p>About Us | Contact: info@restaurant.com | Follow Us: 
+            <a href="#" class="social-icon">Facebook</a>, 
+            <a href="#" class="social-icon">Instagram</a>, 
+            <a href="#" class="social-icon">Twitter</a>
+        </p>
+    </footer>
+    
+    
+    <script src="./menu.js"></script>
+</body>
+</html>

@@ -1,11 +1,12 @@
+
+
 /* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Ensure a consistent font */
 }
-
 /* Header Styling */
 header {
     position: fixed;
@@ -54,93 +55,59 @@ header {
 }
 
 
-/* Hero Section */
-#hero {
-    background-image: url('https://images.getbento.com/accounts/b5176a04370ff122380dcee937fe2565/media/PbhRapfSQK8ZWHW2Q8m6_home pg.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 200px 20px;
+
+/* Catering Page Styles */
+#catering-intro {
+    padding: 60px 20px;
+    padding-top: 10%;
     text-align: center;
-    color: #ffffff;
+    background-color: #f0f8ff;
 }
 
-#hero h1 {
-    font-size: 4em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+#catering-intro h1 {
+    font-size: 2.5em;
+    color: #334834;
 }
 
-#hero p {
-    font-size: 1.5em;
-    margin: 15px 0;
-}
-
-.btn-primary {
-    padding: 10px 20px;
-    background-color: #334834;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-}
-
-/* Featured Dishes */
-#featured-dishes {
+#catering-menu {
     padding: 60px 20px;
     text-align: center;
 }
 
-#featured-dishes h2 {
+#catering-menu h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #334834;
 }
 
-.dishes-container {
+.menu-container {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-.dish img {
+.menu-item img {
     width: 100%;
     border-radius: 10px;
 }
 
-.dish h3 {
+.menu-item h3 {
     margin-top: 10px;
     color: #334834;
 }
 
-.dish p {
+.menu-item p {
     color: #555;
 }
 
-/* Gallery */
-#gallery {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-#gallery h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #334834;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
-}
-
-/* Testimonials */
-#testimonials {
+#catering-testimonials {
     padding: 60px 20px;
     background-color: #f8f8f8;
     text-align: center;
 }
 
-#testimonials h2 {
+#catering-testimonials h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #334834;
@@ -163,7 +130,54 @@ header {
     color: #334834;
 }
 
-/* Footer */
+#contact-form {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #334834;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #334834;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1c1c1c;
+}
+
+/*footer*/
+
 footer {
     background-color: #334834;
     color: #ffffff;
@@ -188,3 +202,4 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+

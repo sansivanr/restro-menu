@@ -7,58 +7,82 @@
     <title>Silver Goose</title>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <img class="bird-logo" src="360_F_347325182_VtAIwejeBDCEyw97nG89REE2T3nnmwG7.jpg" alt="">
+        <img class="bird-logo" src="img.png" alt="Logo">
         <nav class="nav-bar">
             <ul class="nav-menu">
-                <li><button class="nav-button">LOCATION</button></li>
-                <li><a href="">MENU</a></li>
-                <li><a href="">CATERING</a></li>
-                <li><a href="">DEALS</a></li>
-                <li><a href="">ABOUT</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="catering.html">CATERING</a></li>
+                <li><a href="deals.html">DEALS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
     </header>
-    <div class="category">
-        <button onclick="displayCategory('starters')">Starters</button>
-        <button onclick="displayCategory('main_course')">Main Course</button>
-        <button onclick="displayCategory('drinks')">Cocktails</button>
-        <button onclick="displayCategory('mocktails')">Mocktails</button>
-        <button onclick="displayCategory('desserts')">Desserts</button>
-    </div>
-    <div id="menu-container" class="box">
-        <div class="container one">
-            <h1>SANDOS</h1>
-            <p>
-                The Works = mayo, yellow or dijon mustard, pickle, red onion, tomato, shrettuce or romaine lettuce & herb juice.
-            </p>
-            <p>
-                Make It Stoney! = Sando Maker's choice of extra ingredients to trick out your sandwich. (Always different, always STONEY)
-            </p>
-        </div>
-        
 
-        <div class="container one">
-            <h1>SANDOS</h1>
-            <p>
-                The Works = mayo, yellow or dijon mustard, pickle, red onion, tomato, shrettuce or romaine lettuce & herb juice.
-            </p>
-            <p>
-                Make It Stoney! = Sando Maker's choice of extra ingredients to trick out your sandwich. (Always different, always STONEY)
-            </p>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-text">
+            <h1>Welcome to Silver Goose</h1>
+            <p>Experience a fusion of flavors with a unique culinary twist.</p>
+            <a href="menu.html" class="btn-primary">Explore Our Menu</a>
         </div>
-        
-        <div class="container one">
-            <h1>SANDOS</h1>
-            <p>
-                The Works = mayo, yellow or dijon mustard, pickle, red onion, tomato, shrettuce or romaine lettuce & herb juice.
-            </p>
-            <p>
-                Make It Stoney! = Sando Maker's choice of extra ingredients to trick out your sandwich. (Always different, always STONEY)
-            </p>
+    </section>
+
+    <!-- Featured Dishes Section -->
+    <section id="featured-dishes">
+        <h2>Featured Dishes</h2>
+        <div class="dishes-container">
+            <div class="dish">
+                <img src="https://via.placeholder.com/150" alt="Dish 1">
+                <h3>Grilled Salmon</h3>
+                <p>Fresh salmon fillet with herbs and lemon.</p>
+            </div>
+            <div class="dish">
+                <img src="https://via.placeholder.com/150" alt="Dish 2">
+                <h3>Beef Steak</h3>
+                <p>Juicy beef steak served with mashed potatoes.</p>
+            </div>
+            <div class="dish">
+                <img src="https://via.placeholder.com/150" alt="Dish 3">
+                <h3>Pasta Primavera</h3>
+                <p>Delicious pasta with seasonal vegetables.</p>
+            </div>
         </div>
-        
-    </div>
-    <script src="./script.js"></script>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://via.placeholder.com/300" alt="Gallery 1">
+            <img src="https://via.placeholder.com/300" alt="Gallery 2">
+            <img src="https://via.placeholder.com/300" alt="Gallery 3">
+            <img src="https://via.placeholder.com/300" alt="Gallery 4">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>Customer Reviews</h2>
+        <div class="testimonial">
+            <p>"The food here is amazing! I love the ambiance and the service."</p>
+            <h4>- Jane Doe</h4>
+        </div>
+        <div class="testimonial">
+            <p>"The best dining experience I’ve had in a long time. Highly recommended!"</p>
+            <h4>- John Smith</h4>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>About Us | Contact: info@restaurant.com | Follow Us: 
+            <a href="#" class="social-icon">Facebook</a>, 
+            <a href="#" class="social-icon">Instagram</a>, 
+            <a href="#" class="social-icon">Twitter</a>
+        </p>
+    </footer>
 </body>
 </html>

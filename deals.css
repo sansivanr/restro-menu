@@ -1,11 +1,11 @@
+/* Deals Page Styles */
 /* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Ensure a consistent font */
 }
-
 /* Header Styling */
 header {
     position: fixed;
@@ -54,116 +54,122 @@ header {
 }
 
 
-/* Hero Section */
-#hero {
-    background-image: url('https://images.getbento.com/accounts/b5176a04370ff122380dcee937fe2565/media/PbhRapfSQK8ZWHW2Q8m6_home pg.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 200px 20px;
+main {
+    padding-top: 80px; /* To avoid content hidden behind the fixed header */
+}
+
+#deals-intro {
+    padding: 60px 20px;
     text-align: center;
-    color: #ffffff;
+    background-color: #e0f7fa;
 }
 
-#hero h1 {
-    font-size: 4em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+#deals-intro h1 {
+    font-size: 2.5em;
+    color: #004d40;
+    margin-bottom: 10px;
 }
 
-#hero p {
-    font-size: 1.5em;
-    margin: 15px 0;
-}
-
-.btn-primary {
-    padding: 10px 20px;
-    background-color: #334834;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+#deals-intro p {
     font-size: 1.2em;
+    color: #333;
 }
 
-/* Featured Dishes */
-#featured-dishes {
+#current-deals {
     padding: 60px 20px;
     text-align: center;
 }
 
-#featured-dishes h2 {
+#current-deals h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #334834;
+    color: #004d40;
 }
 
-.dishes-container {
-    display: flex;
-    justify-content: center;
+.deals-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    padding: 20px;
 }
 
-.dish img {
-    width: 100%;
+.deal-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
     border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.dish h3 {
-    margin-top: 10px;
-    color: #334834;
+.deal-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
-.dish p {
+.deal-item h3 {
+    margin: 0 0 10px;
+    color: #004d40;
+}
+
+.deal-item p {
     color: #555;
 }
 
-/* Gallery */
-#gallery {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-#gallery h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #334834;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
-}
-
-/* Testimonials */
-#testimonials {
-    padding: 60px 20px;
-    background-color: #f8f8f8;
-    text-align: center;
-}
-
-#testimonials h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #334834;
-}
-
-.testimonial {
-    margin: 20px auto;
-    max-width: 500px;
-}
-
-.testimonial p {
-    font-size: 1.2em;
-    color: #333;
-    font-style: italic;
-}
-
-.testimonial h4 {
-    margin-top: 10px;
+.deal-price {
     font-weight: bold;
-    color: #334834;
+    color: #c00;
 }
 
-/* Footer */
+#contact-deals {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact-deals h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #00332b;
+}
+
+/* Footer Section */
 footer {
     background-color: #334834;
     color: #ffffff;

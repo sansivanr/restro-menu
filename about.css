@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Ensure a consistent font */
 }
 
 /* Header Styling */
@@ -53,114 +53,38 @@ header {
     color: #fff; /* Contrast text color on hover */
 }
 
-
-/* Hero Section */
-#hero {
-    background-image: url('https://images.getbento.com/accounts/b5176a04370ff122380dcee937fe2565/media/PbhRapfSQK8ZWHW2Q8m6_home pg.jpg');
+/* About Section Styling */
+#about-1 {
+    background-image: url('main.avif');
     background-size: cover;
     background-position: center;
-    padding: 200px 20px;
+    padding: 250px 100px;
     text-align: center;
+}
+
+#about-1 h2 {
+    font-size: 100px;
+    margin-bottom: 20px;
     color: #ffffff;
-}
-
-#hero h1 {
-    font-size: 4em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-#hero p {
-    font-size: 1.5em;
-    margin: 15px 0;
-}
-
-.btn-primary {
-    padding: 10px 20px;
-    background-color: #334834;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-}
-
-/* Featured Dishes */
-#featured-dishes {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-#featured-dishes h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #334834;
-}
-
-.dishes-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.dish img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.dish h3 {
-    margin-top: 10px;
-    color: #334834;
-}
-
-.dish p {
-    color: #555;
-}
-
-/* Gallery */
-#gallery {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-#gallery h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #334834;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
-}
-
-/* Testimonials */
-#testimonials {
-    padding: 60px 20px;
-    background-color: #f8f8f8;
-    text-align: center;
-}
-
-#testimonials h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #334834;
-}
-
-.testimonial {
-    margin: 20px auto;
-    max-width: 500px;
-}
-
-.testimonial p {
-    font-size: 1.2em;
-    color: #333;
-    font-style: italic;
-}
-
-.testimonial h4 {
-    margin-top: 10px;
     font-weight: bold;
+}
+
+#about-2 {
+    padding: 80px 100px;
+    background-color: #ffffff;
     color: #334834;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#about-2 p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 /* Footer */
